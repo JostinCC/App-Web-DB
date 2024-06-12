@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Consumo por Número de Medidor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl">Consultar Consumo por Número de Medidor</h1>
+        </div>
+    </header>
+    <section id="consultar_numero" class="py-8">
+        <div class="container mx-auto">
+            <h2 class="text-2xl mb-4">Consultar Consumo</h2>
+            <form action="procesar_consulta_consumo.php" method="post" class="w-full max-w-md">
+                <div class="flex flex-wrap mb-4">
+                    <label for="id_medidor" class="block text-gray-700 text-sm mb-2">Número de Medidor:</label>
+                    <input type="text" id="id_medidor" name="id_medidor" required class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <input type="submit" value="Consultar Consumo" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Registro de Clientes y Lecturas de Medidores</p>
+        </div>
+    </footer>
+</body>
+</html>
